@@ -7,7 +7,7 @@ const tareaNueva = process.argv[3];
 const estado = process.argv[3];
 
 const funciones = require('./funciones');
-
+/// aca deberiamos agregar mas funcionalidad
 switch (accionDelUsuario) {
     case 'listar':
         funciones.listar()
