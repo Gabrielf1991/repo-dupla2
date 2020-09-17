@@ -18,6 +18,9 @@ switch (accionDelUsuario) {
     case 'filtrar':
         funciones.filtrar(estado)
     break;
+    case 'Eliminar':
+        funciones.filtrar(tareaEliminar)
+    break;
     case undefined:
         console.log('No elegiste opción. Opciones: listar, agregar o filtrar')
     break;

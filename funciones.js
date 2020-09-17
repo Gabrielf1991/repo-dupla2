@@ -50,7 +50,19 @@ const funciones = {
         tareasFiltradas.forEach((tarea, index) => {
             console.log(index + 1 + ') ' + tarea.titulo + ' - ' + tarea.estado)
         });
+    },
+    eliminar (tareEliminar){
+        /**
+         * Leer JSON
+         * Guardar en memora
+         * Buscar Tarea , si está se elimina, sino se devuelve que no existe.
+         * si no existe no se hace nada.
+         * si existe se elimina y luego graba
+         *
+         */
+
     }
+    
 };
 
 module.exports = funciones;
