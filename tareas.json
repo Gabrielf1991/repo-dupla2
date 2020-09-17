@@ -1,0 +1,18 @@
+[
+ {
+  "titulo": "Comprar lavandina.",
+  "estado": "Realizado"
+ },
+ {
+  "titulo": "Ir a la clase de DH.",
+  "estado": "Pendiente"
+ },
+ {
+  "titulo": "Hacer la tarea de JS.",
+  "estado": "Pendiente"
+ },
+ {
+  "titulo": "Comprar arroz",
+  "estado": "Pendiente"
+ }
+]
