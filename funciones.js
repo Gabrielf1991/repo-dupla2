@@ -51,17 +51,45 @@ const funciones = {
             console.log(index + 1 + ') ' + tarea.titulo + ' - ' + tarea.estado)
         });
     },
-    eliminar (tareEliminar){
+    eliminar (tareaEliminar){
         /**
          * Leer JSON
-         * Guardar en memora
+         * Guardar en memoria
          * Buscar Tarea , si está se elimina, sino se devuelve que no existe.
          * si no existe no se hace nada.
          * si existe se elimina y luego graba
          *
          */
 
-    }
+         const tareas = this.leerJSON();
+          //console.log(tareaEliminar);
+          //console.log(tareas);
+            indexEliminar=-1;
+            tareas.forEach((tarea,index) =>{
+               // console.log("ITERO POR TAREA::::"+tarea.titulo)
+               if (tarea.titulo==tareaEliminar){
+                   
+                   indexEliminar=index;
+               }
+
+            });
+          
+            if (indexEliminar!=-1){
+            tareas.splice(indexEliminar,1);
+             //console.log("elimine");
+            }else
+            {
+                console.log("tarea no econtrada");
+            }
+        
+            this.escribirJSON(tareas);
+               
+
+           
+          
+
+
+    },
     
 };
 
